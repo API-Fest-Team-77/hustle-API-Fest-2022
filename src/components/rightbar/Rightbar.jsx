@@ -36,16 +36,24 @@ export default function Rightbar({ profile }) {
 				<h4 className="rightbarTitle">User information</h4>
 				<div className="rightbarInfo">
 					<div className="rightbarInfoItem">
-						<span className="rightbarInfoKey">City:</span>
-						<span className="rightbarInfoValue">New York</span>
+						<span className="rightbarInfoKey">Company name:</span>
+						<span className="rightbarInfoValue">XYZ</span>
 					</div>
 					<div className="rightbarInfoItem">
-						<span className="rightbarInfoKey">From:</span>
+						<span className="rightbarInfoKey">Location:</span>
 						<span className="rightbarInfoValue">Madrid</span>
 					</div>
 					<div className="rightbarInfoItem">
-						<span className="rightbarInfoKey">Relationship:</span>
-						<span className="rightbarInfoValue">Single</span>
+						<span className="rightbarInfoKey">About your company:</span>
+						<span className="rightbarInfoValue">vhjvdbkj</span>
+					</div>
+					<div className="rightbarInfoItem">
+						<span className="rightbarInfoKey">Required funding:</span>
+						<span className="rightbarInfoValue">vhjvdbkj</span>
+					</div>
+					<div className="rightbarInfoItem">
+						<span className="rightbarInfoKey">Stock value:</span>
+						<span className="rightbarInfoValue">43243</span>
 					</div>
 				</div>
 				<h4 className="rightbarTitle">User friends</h4>
