@@ -1,0 +1,32 @@
+.sidebar {
+    border-right: 5px solid var(--hustle-background);
+    flex: 0.2;
+    /* min-width: 250px; */
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--hustle-color);
+}
+
+/* .sidebar[type= "text"]{
+    font-weight: 100;
+} */
+
+.sidebar__hustleIcon {
+    color: black;
+    font-size: 30px !important;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar__post {
+    background-color: white !important;
+    border: none !important;
+    color: black !important;
+    font-weight: 900 !important; 
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+}
