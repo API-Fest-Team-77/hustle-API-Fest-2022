@@ -1,6 +1,6 @@
 .feed {
     flex: 0.65 1;
-    border-right: 1px solid var(--twitter-background);
+    border-right: 1px solid var(--hustle-background);
     min-width: 0;
     overflow-y: scroll;
 }
@@ -14,7 +14,7 @@
     top: 0;
     background-color: white;
     z-index: 100;
-    border: 1px solid var(--twitter-background);
+    border: 1px solid var(--hustle-background);
     padding: 15px 20px;
 }
 

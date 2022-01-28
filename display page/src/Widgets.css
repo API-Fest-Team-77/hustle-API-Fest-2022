@@ -5,7 +5,7 @@
 .widgets__input {
     display: flex;
     align-items: center;
-    background-color: var(--twitter-background);
+    background-color: var(--hustle-background);
     padding: 10px;
     border-radius: 20px;
     margin-top: 10px;
@@ -14,7 +14,7 @@
 
 .widgets__input >input {
     border: none;
-    background-color: var(--twitter-background);
+    background-color: var(--hustle-background);
 }
 
 .widgets__searchIcon {

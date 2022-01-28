@@ -12,8 +12,8 @@ import { ReactComponent as YourSvg } from './h-3.svg';
 function Sidebar() {
     return (
         <div className = "sidebar">
-            {/* Twitter icon */}
-            <YourSvg className= "sidebar__twitterIcon" />
+            {/* App icon */}
+            <YourSvg className= "sidebar__hustleIcon" />
             {/* Sidebar option */}
             <SidebarOption Icon = {HomeIcon} text = "Home"/>
             <SidebarOption Icon = {SearchIcon} text = "Explore"/>
@@ -21,9 +21,9 @@ function Sidebar() {
             <SidebarOption Icon={PermIdentityIcon} text="Profile" />
             <SidebarOption Icon={MoreHorizIcon} text="Categories" />
 
-            {/* Button -> Tweet */}
+            {/* Button -> post */}
 
-            <Button variant = "outlined" className = "sidebar__tweet" fullWidth>Post</Button>
+            <Button variant = "outlined" className = "sidebar__hustle" fullWidth>Post</Button>
         </div>
     );
 }
