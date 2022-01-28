@@ -48,7 +48,7 @@ export const Users = [
 		id: 10,
 		profilePicture: "assets/person/10.jpeg",
 		username: "Safak Kocaoglu",
-	},
+	}
 ];
 
 export const Posts = [
@@ -135,5 +135,10 @@ export const Posts = [
 		userId: 10,
 		like: 104,
 		comment: 12,
-	},
+	}
 ];
+
+export const topbarEg = [{
+	imageUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlYYChXCPeV3ou1wdnB_y4AhXAEySC1D6agQ&usqp=CAU',
+	notificationCount:'4'
+}]

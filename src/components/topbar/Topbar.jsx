@@ -1,7 +1,14 @@
+import React, {forwardRef} from 'react';
 import { Person, Search } from "@material-ui/icons";
 import "./topbar.css";
-export default function Topbar() {
-	return (
+// import { topbarEg } from '../../dummyData';
+
+const Topbar = forwardRef(
+    ({
+		notificationCount,
+		imageUrl
+	}) => {
+    return (
 		<div className="topbarContainer">
 			<div className="topbarLeft">
 				<span className="logo">Hustle.</span>
@@ -13,21 +20,23 @@ export default function Topbar() {
 				</div>
 			</div>
 			<div className="topbarRight">
-				<div className="topbarLinks">
+				<div>
 					<span className="topbarLink">Homepage</span>
 				</div>
 				<div className="topbarIcons">
 					<div className="topbarIconItem">
 						<Person />
-						<span className="topbarIconBadge">1</span>
+						<span className="topbarIconBadge">{notificationCount}</span>
 					</div>
 				</div>
 				<img
-					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlYYChXCPeV3ou1wdnB_y4AhXAEySC1D6agQ&usqp=CAU"
+					src={imageUrl}
 					alt=""
 					className="topbarImg"
 				/>
 			</div>
 		</div>
-	);
-}
+	    )
+})
+
+export default Topbar
