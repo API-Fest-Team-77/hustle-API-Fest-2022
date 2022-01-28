@@ -1,7 +1,7 @@
 import "./App.css";
-import Profile from "./pages/profile/Profile";
+import Login from "./pages/login/Login";
 function App() {
-	return <Profile />;
+	return <Login />;
 }
 
 export default App;
