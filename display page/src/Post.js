@@ -12,11 +12,12 @@ const Post = forwardRef(
     ({ displayName, 
         username, 
         verified, 
-        text, 
-        image, 
+        text,
+        title, 
         avatar},ref) => {
     return (
         <div className = "post" ref = {ref}>
+            
             <div className = "post__avatar">
                 <Avatar src = {avatar} />
             </div>
@@ -26,15 +27,18 @@ const Post = forwardRef(
                         <h3>
                             {displayName}{". "}
                             <span className = "post__headerSpecial">
-                                {verified && <VerifiedUserIcon className="post__badge" />} @{username}
+                                {verified && <VerifiedUserIcon className="post__badge" />} @ <a href={`/${username}`}>{username}</a>
                             </span>
                         </h3>
+                    </div>
+                    <div>
+                        <h3 className="post__title"> {title} </h3>
                     </div>
                     <div className = "post__headerDescription">
                         <p> {text} </p>
                     </div>
                 </div>
-                <img src = {image} />
+                
                 <div className = "post__footer">
                     <ChatBubbleOutlineIcon fontSize="small" />
                     <RepeatIcon fontSize="small" />

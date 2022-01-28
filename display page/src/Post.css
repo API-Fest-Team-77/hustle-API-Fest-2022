@@ -10,10 +10,6 @@
     padding: 10px;
 }
 
-.post__body > img {
-    border-radius: 20px;
-}
-
 .post__headerText > h3 {
     font-size: 15px;
     margin-bottom: 5px;
