@@ -47,13 +47,6 @@ export default function Sidebar() {
 						/>
 						<span className="sidebarFriendName">Eren Yeager</span>
 					</li>
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHZsc3xwRGK_buY_o47OogoecMLL8W_dfjw&usqp=CAU"
-						/>
-						<span className="sidebarFriendName">Eren Yeager</span>
-					</li>
 				</ul>
 			</div>
 		</div>
