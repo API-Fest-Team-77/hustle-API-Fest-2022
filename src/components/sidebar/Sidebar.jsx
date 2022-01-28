@@ -1,4 +1,6 @@
 import { Chat, Group, PlayCircleFilledOutlined, RssFeed } from "@material-ui/icons";
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 import "./sidebar.css";
 
 export default function Sidebar() {
@@ -26,27 +28,9 @@ export default function Sidebar() {
 				<button className="sidebarButton">Show More</button>
 				<hr className="sidebarHr" />
 				<ul className="sidebarFriendList">
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHZsc3xwRGK_buY_o47OogoecMLL8W_dfjw&usqp=CAU"
-						/>
-						<span className="sidebarFriendName">Eren Yeager</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHZsc3xwRGK_buY_o47OogoecMLL8W_dfjw&usqp=CAU"
-						/>
-						<span className="sidebarFriendName">Eren Yeager</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHZsc3xwRGK_buY_o47OogoecMLL8W_dfjw&usqp=CAU"
-						/>
-						<span className="sidebarFriendName">Eren Yeager</span>
-					</li>
+					{Users.map((u) => (
+						<CloseFriend key={u.id} user={u} />
+					))}
 				</ul>
 			</div>
 		</div>
