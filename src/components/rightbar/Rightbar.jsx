@@ -1,5 +1,6 @@
+import { Users } from "../../dummyData";
+import Online from "../online/Online";
 import "./rightbar.css";
-
 export default function Rightbar({ profile }) {
 	const HomeRightbar = () => {
 		return (
@@ -21,7 +22,9 @@ export default function Rightbar({ profile }) {
 				/>
 				<h4 className="rightbarTitle">Online Friends</h4>
 				<ul className="rightbarFriendList">
-					<li className="rightbarFriend"></li>
+					{Users.map((u) => (
+						<Online key={u.id} user={u} />
+					))}
 				</ul>
 			</>
 		);
@@ -48,51 +51,27 @@ export default function Rightbar({ profile }) {
 				<h4 className="rightbarTitle">User friends</h4>
 				<div className="rightbarFollowings">
 					<div className="rightbarFollowing">
-						<img
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVVuNxIQe46ycLkSFaakQ7eggqDoKzFv9gog&usqp=CAU"
-							alt=""
-							className="rightbarFollowingImg"
-						/>
+						<img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg" />
 						<span className="rightbarFollowingName">John Carter</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ3sswRZ2WB0Scr1ZO6WVM7aZSNeBzKukxTg&usqp=CAU"
-							alt=""
-							className="rightbarFollowingImg"
-						/>
+						<img src="assets/person/2.jpeg" alt="" className="rightbarFollowingImg" />
 						<span className="rightbarFollowingName">John Carter</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img
-							src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fhaikyuu%2Fimages%2Fe%2Fe5%2FKaine-2014-06-14-03h04m04s54.png%2Frevision%2Flatest%3Fcb%3D20140614121105&imgrefurl=https%3A%2F%2Fhaikyuu.fandom.com%2Fwiki%2FT%25C5%258Dru_Oikawa&tbnid=fG-eCOvmCQ4BjM&vet=12ahUKEwit-47Rq9X1AhUWgGMGHTf2AKwQMyg4egQIARBQ..i&docid=VEqRpG3epaEMkM&w=853&h=480&itg=1&q=haikyu%20profile%20picture&hl=en&ved=2ahUKEwit-47Rq9X1AhUWgGMGHTf2AKwQMyg4egQIARBQ"
-							alt=""
-							className="rightbarFollowingImg"
-						/>
+						<img src="assets/person/3.jpeg" alt="" className="rightbarFollowingImg" />
 						<span className="rightbarFollowingName">John Carter</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsof6w2l_aNlOcq95cAkJtR8XsjWBJYokQlQ&usqp=CAU"
-							alt=""
-							className="rightbarFollowingImg"
-						/>
+						<img src="assets/person/4.jpeg" alt="" className="rightbarFollowingImg" />
 						<span className="rightbarFollowingName">John Carter</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUy-ADS8us--elFiRax1i7YjAQlZqR3Wzr2w&usqp=CAU"
-							alt=""
-							className="rightbarFollowingImg"
-						/>
+						<img src="assets/person/5.jpeg" alt="" className="rightbarFollowingImg" />
 						<span className="rightbarFollowingName">John Carter</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8EWEpp2muW4t25Ra3RuxkUMny9KwqHP3IhA&usqp=CAU"
-							alt=""
-							className="rightbarFollowingImg"
-						/>
+						<img src="assets/person/6.jpeg" alt="" className="rightbarFollowingImg" />
 						<span className="rightbarFollowingName">John Carter</span>
 					</div>
 				</div>
