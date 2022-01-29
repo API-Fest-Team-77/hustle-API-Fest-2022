@@ -1,5 +1,4 @@
 import { Users } from "../../dummyData";
-import Online from "../online/Online";
 import "./rightbar.css";
 export default function Rightbar({ profile }) {
 	const HomeRightbar = () => {
@@ -20,12 +19,6 @@ export default function Rightbar({ profile }) {
 					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTYwpr_Qc7b4gIGKtdyj6ubG2JfR8NfRh9_w&usqp=CAU"
 					alt=""
 				/>
-				<h4 className="rightbarTitle">Online Friends</h4>
-				<ul className="rightbarFriendList">
-					{Users.map((u) => (
-						<Online key={u.id} user={u} />
-					))}
-				</ul>
 			</>
 		);
 	};
