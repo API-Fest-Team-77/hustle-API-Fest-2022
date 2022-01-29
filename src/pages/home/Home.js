@@ -9,8 +9,8 @@ export default function Home() {
 		<>
 			{/* Topbar */}
 			<Topbar
-			notificationCount= {topbarEg.notificationCount}
-			imageUrl={topbarEg.imageUrl}
+			notificationCount= {topbarEg[0].notificationCount}
+			imageUrl={topbarEg[0].imageUrl}
 			/>
 			<div className="homeContainer">
 				<Sidebar />
