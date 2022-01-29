@@ -1,4 +1,6 @@
-import "./login.css";
+import { Input, PasswordInput,Button } from '@mantine/core';
+import "./login.css"
+import { IoMail,IoLockClosed } from "react-icons/io5";
 
 export default function Login() {
 	return (
@@ -10,10 +12,10 @@ export default function Login() {
 				</div>
 				<div className="loginRight">
 					<div className="loginBox">
-						<input placeholder="Email" className="loginInput" />
-						<input placeholder="Password" className="loginInput" />
-						<button className="loginButton">Log In</button>
-						<span className="loginForgot">Forgot Password?</span>
+						<Input placeholder="Email" radius="lg" size="lg" icon={<IoMail/>}/>
+						<PasswordInput placeholder="Password" radius="lg" size="lg" icon={<IoLockClosed/>} />
+						<Button className="loginButton">Log In</Button>
+						<span></span>
 						<button className="loginRegisterButton">Create a New Account</button>
 					</div>
 				</div>
